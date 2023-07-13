@@ -60,10 +60,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [1] = LAYOUT(
     KC_NO,    KC_NO,  KC_NO,   KC_NO,   KC_NO,   KC_NO,                     KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
-    _______,  KC_NO,  KC_NO,   KC_NO,   KC_NO,   KC_NO,                     KC_NO,   KC_P7,   KC_P8,   KC_P9,   KC_PAST, KC_PEQL,
-    _______,  KC_NO,  KC_NO,   KC_NO,   KC_NO,   KC_NO,                     KC_CIRC, KC_P4,   KC_P5,   KC_P6,   KC_PPLS, KC_NUM,
-    _______,  KC_NO,  KC_NO,   KC_NO,   KC_NO,   KC_NO,   _______, _______, KC_DLR,  KC_P1,   KC_P2,   KC_P3,   KC_PMNS, _______,
-                      _______, _______, _______, _______, _______, _______, _______, KC_P0,   KC_PDOT, KC_PSLS
+    _______,  KC_NO,  KC_NO,   KC_NO,   KC_NO,   KC_NO,                     KC_NO,   KC_7,    KC_8,    KC_9,    KC_ASTR, KC_EQL,
+    _______,  KC_NO,  KC_NO,   KC_NO,   KC_NO,   KC_NO,                     KC_CIRC, KC_4,    KC_5,    KC_6,    KC_PLUS, KC_NUM,
+    _______,  KC_NO,  KC_NO,   KC_NO,   KC_NO,   KC_NO,   _______, _______, KC_DLR,  KC_1,    KC_2,    KC_3,    KC_MINS, _______,
+                      _______, _______, _______, _______, _______, _______, _______, KC_0,    KC_DOT,  KC_SLSH
 ),
 /* RAISE
  * ,----------------------------------------.                    ,-----------------------------------------.
@@ -92,7 +92,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * | Tab  |CS+F1 |CS+F2 |CS+F3 |CS+F4 |      |                    |      |      |      |      |      |      |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * | Caps |CS+F5 |CS+F6 |CS+F7 |CS+F8 |      |-------.    ,-------|      |      |      |      |      |  Num |
+ * | Caps |CS+F5 |CS+F6 |CS+F7 |CS+F8 |      |-------.    ,-------|      |      |      |      |      |      |
  * |------+------+------+------+------+------|  Caps  |   | Pscr  |------+------+------+------+------+------|
  * |Shift |CS+F9 |CS+F10|CS+F11|CS+F12|      |--------|   |-------|      |      |      |      |      | Shift|
  * `-----------------------------------------/       /     \      \-----------------------------------------'
@@ -103,7 +103,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [3] = LAYOUT(
     KC_NO,    KC_NO,       KC_NO,       KC_NO,       KC_NO,       KC_NO,                     KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_NO,
     _______,  RCS(KC_F1),  RCS(KC_F2),  RCS(KC_F3),  RCS(KC_F4),  KC_NO,                     KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_NO,
-    KC_CAPS,  RCS(KC_F5),  RCS(KC_F6),  RCS(KC_F7),  RCS(KC_F8),  KC_NO,                     KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_NUM,
+    KC_CAPS,  RCS(KC_F5),  RCS(KC_F6),  RCS(KC_F7),  RCS(KC_F8),  KC_NO,                     KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_NO,
     _______,  RCS(KC_F9),  RCS(KC_F10), RCS(KC_F11), RCS(KC_F12), KC_NO,   _______, _______, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, _______,
                            _______,     _______,     _______,     _______, _______, _______, _______, KC_NO,   KC_NO,   KC_NO
 )
