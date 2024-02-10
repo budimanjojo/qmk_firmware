@@ -90,22 +90,22 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,----------------------------------------.                    ,-----------------------------------------.
  * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * | Tab  |CS+F1 |CS+F2 |CS+F3 |CS+F4 |      |                    |      |      |      |      |      |      |
+ * | Tab  |CS+F1 |CS+F2 |CS+F3 |CS+F4 |      |                    |      |GUI+7 |GUI+8 |GUI+9 |      |      |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * | Caps |CS+F5 |CS+F6 |CS+F7 |CS+F8 |      |-------.    ,-------|      |      |      |      |      |      |
+ * | Caps |CS+F5 |CS+F6 |CS+F7 |CS+F8 |      |-------.    ,-------|      |GUI+4 |GUI+5 |GUI+6 |      |      |
  * |------+------+------+------+------+------|  Caps  |   | Pscr  |------+------+------+------+------+------|
- * |Shift |CS+F9 |CS+F10|CS+F11|CS+F12|      |--------|   |-------|      |      |      |      |      | Shift|
+ * |Shift |CS+F9 |CS+F10|CS+F11|CS+F12|      |--------|   |-------|      |GUI+1 |GUI+2 |GUI+3 |      | Shift|
  * `-----------------------------------------/       /     \      \-----------------------------------------'
  *            | LCTR | LGUI | LAlt |Space | /  DEL  /       \ Bspc \  |Enter |      |      |      |
  *            |      |      |      |LOWER |/       /         \      \ |RAISE |      |      |      |
  *            `----------------------------------'           '------''---------------------------'
  */
 [3] = LAYOUT(
-    KC_NO,    KC_NO,       KC_NO,       KC_NO,       KC_NO,       KC_NO,                     KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_NO,
-    _______,  RCS(KC_F1),  RCS(KC_F2),  RCS(KC_F3),  RCS(KC_F4),  KC_NO,                     KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_NO,
-    KC_CAPS,  RCS(KC_F5),  RCS(KC_F6),  RCS(KC_F7),  RCS(KC_F8),  KC_NO,                     KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_NO,
-    _______,  RCS(KC_F9),  RCS(KC_F10), RCS(KC_F11), RCS(KC_F12), KC_NO,   _______, _______, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, _______,
-                           _______,     _______,     _______,     _______, _______, _______, _______, KC_NO,   KC_NO,   KC_NO
+    KC_NO,    KC_NO,       KC_NO,       KC_NO,       KC_NO,       KC_NO,                     KC_NO,   KC_NO,      KC_NO,      KC_NO,      KC_NO, KC_NO,
+    _______,  RCS(KC_F1),  RCS(KC_F2),  RCS(KC_F3),  RCS(KC_F4),  KC_NO,                     KC_NO,   LGUI(KC_7), LGUI(KC_8), LGUI(KC_9), KC_NO, KC_NO,
+    KC_CAPS,  RCS(KC_F5),  RCS(KC_F6),  RCS(KC_F7),  RCS(KC_F8),  KC_NO,                     KC_NO,   LGUI(KC_4), LGUI(KC_5), LGUI(KC_6), KC_NO, KC_NO,
+    _______,  RCS(KC_F9),  RCS(KC_F10), RCS(KC_F11), RCS(KC_F12), KC_NO,   _______, _______, KC_NO,   LGUI(KC_1), LGUI(KC_2), LGUI(KC_3), KC_NO, _______,
+                           _______,     _______,     _______,     _______, _______, _______, _______, KC_NO,      KC_NO,      KC_NO
 )
 };
 
